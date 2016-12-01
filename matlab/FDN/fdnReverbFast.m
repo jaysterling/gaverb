@@ -3,8 +3,8 @@ function [y, status, stdout] = fdnReverbFast(m, bqCoeffs, tcBQCoeffs,tcFIR, fs, 
 if nargin<14
     verbose = 0;
 end
-binPath = '~/bin/fdnreverb';
-outPath = '~/Desktop/fdnout.wav';
+binPath = 'C++/fdnreverb/bin/fdnreverb';
+outPath = 'Sounds/Outputs/fdnout.wav';
 dim = length(m);
 cmd = sprintf('%s -dim %d -fs %d -d %0.10f -bs %d', binPath, dim, fs, d, blockSize);
 if verbose == 1

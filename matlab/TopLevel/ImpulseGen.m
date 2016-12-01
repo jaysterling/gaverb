@@ -1,12 +1,12 @@
 
 close all
 
-[x,fs] = audioread('12 Small Booth.wav');
+[x,fs] = audioread('SampleRIR.wav');
 x = x(:,1);
 [xEarly,xLate] = splitToEarlyLate(x,fs);
 xEarly = xEarly*0.95;
 
-earlyIRPath = '/Users/jcoggin/Desktop/earlyIR.wav';
+earlyIRPath = 'Sounds/earlyIR.wav';
 audiowrite(earlyIRPath,xEarly,fs,'BitsPerSample',32);
 
 size = 4;

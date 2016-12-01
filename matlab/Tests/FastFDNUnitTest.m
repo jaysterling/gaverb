@@ -1,7 +1,7 @@
 
 close all
 
-[x,fs] = audioread('12 Small Booth.wav');
+[x,fs] = audioread('SampleRIR.wav');
 x = x(:,1)*0.95;
 [xEarly,xLate] = splitToEarlyLate(x,fs,80);
 
@@ -91,8 +91,7 @@ end
 
 %% Now do it with early, no filters
 
-
-earlyIRPath = '/Users/jcoggin/Desktop/earlyIR.wav';
+earlyIRPath = 'Sounds/earlyIR.wav';
 audiowrite(earlyIRPath,xEarly,fs,'BitsPerSample',32);
 xE = audioread(earlyIRPath);
 maxDBDif = 20*log10(max(abs(xEarly - xE)));
