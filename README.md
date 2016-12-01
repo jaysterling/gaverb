@@ -3,7 +3,7 @@
 
 This repository contains the Matlab and C++ source code I developed in working on my Masters Thesis at the University of Miami under Will Pirkle. The work investigates the use of the Genetic Algorithm for guiding the automatic design of FDN reverb parameters to perceptually match some target room impulse response's sound.
 
-More info on the algorithm steps can be found in the [full thesis here](www.jaycoggin.com/home/automatic-fdn-reverb-design-using-the-genetic-algorithm/) or the [condensed AES paper here](http://www.aes.org/e-lib/browse.cfm?elib=18470)
+More info on the algorithm steps can be found in the [full thesis here](http://www.jaycoggin.com/home/automatic-fdn-reverb-design-using-the-genetic-algorithm/) or the [condensed AES paper here](http://www.aes.org/e-lib/browse.cfm?elib=18470)
 
 The optimization algorithm is implemented in MATLAB using the global optimization toolbox's genetic algorithm. The number crunching to generate each synthetic FDN IR for comparison is done in a command line app called from MATLAB during each iteration.
 
