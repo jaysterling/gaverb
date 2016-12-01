@@ -50,3 +50,7 @@ Backup[ ]of[ ]*.numbers/
 MANIFEST
 dist/
 build/
+
+# generated sounds
+Sounds/Outputs/*
+C++/FFTConvolver/*
